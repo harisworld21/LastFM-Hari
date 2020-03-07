@@ -16,6 +16,10 @@
 		7B718F732413AF610056B769 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B718F722413AF610056B769 /* SearchTableViewCell.xib */; };
 		7B718F782413C2FE0056B769 /* UrlConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F772413C2FE0056B769 /* UrlConnection.swift */; };
 		7B718F7B2413C90B0056B769 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F7A2413C90B0056B769 /* SearchViewModel.swift */; };
+		7B718F7D2413EFE30056B769 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F7C2413EFE30056B769 /* CommonModel.swift */; };
+		7B718F8124141CE00056B769 /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F8024141CE00056B769 /* ArtistModel.swift */; };
+		7B718F8324141CEE0056B769 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F8224141CEE0056B769 /* AlbumModel.swift */; };
+		7B718F8524145D620056B769 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F8424145D620056B769 /* TrackModel.swift */; };
 		CD8769D66E0E6E482E75AB10 /* Pods_Lastfm_Hari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963CA6238F0F83CFC53C0F80 /* Pods_Lastfm_Hari.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +36,10 @@
 		7B718F722413AF610056B769 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		7B718F772413C2FE0056B769 /* UrlConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlConnection.swift; sourceTree = "<group>"; };
 		7B718F7A2413C90B0056B769 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		7B718F7C2413EFE30056B769 /* CommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
+		7B718F8024141CE00056B769 /* ArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
+		7B718F8224141CEE0056B769 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		7B718F8424145D620056B769 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
 		7F1817967E5586389668C3FA /* Pods-Lastfm-Hari.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lastfm-Hari.release.xcconfig"; path = "Target Support Files/Pods-Lastfm-Hari/Pods-Lastfm-Hari.release.xcconfig"; sourceTree = "<group>"; };
 		963CA6238F0F83CFC53C0F80 /* Pods_Lastfm_Hari.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lastfm_Hari.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -96,6 +104,10 @@
 		7B718F742413B8A80056B769 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B718F7C2413EFE30056B769 /* CommonModel.swift */,
+				7B718F8424145D620056B769 /* TrackModel.swift */,
+				7B718F8024141CE00056B769 /* ArtistModel.swift */,
+				7B718F8224141CEE0056B769 /* AlbumModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,7 +254,11 @@
 			files = (
 				7B718F632413ACD00056B769 /* LastFMViewController.swift in Sources */,
 				7B718F7B2413C90B0056B769 /* SearchViewModel.swift in Sources */,
+				7B718F8124141CE00056B769 /* ArtistModel.swift in Sources */,
+				7B718F7D2413EFE30056B769 /* CommonModel.swift in Sources */,
+				7B718F8524145D620056B769 /* TrackModel.swift in Sources */,
 				7B718F5F2413ACD00056B769 /* AppDelegate.swift in Sources */,
+				7B718F8324141CEE0056B769 /* AlbumModel.swift in Sources */,
 				7B718F782413C2FE0056B769 /* UrlConnection.swift in Sources */,
 				7B718F612413ACD00056B769 /* SceneDelegate.swift in Sources */,
 			);

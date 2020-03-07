@@ -23,15 +23,13 @@ class LastFMViewController: UIViewController, UISearchBarDelegate {
     func setUpView()
     {
         searchVM = SearchViewModel()
-        searchBar.scopeButtonTitles = searchVM?.scopeBarItems
-        searchBar.showsScopeBar = true
         searchBar.delegate = self
         searchBar.selectedScopeButtonIndex = 0
+        searchVM?.subscribeReactiveSearch(searchBar: searchBar, tableView: tableView, scopeId: 0)
     }
     
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-        searchVM?.computeCurrentScope(scopeId: selectedScope)
-        searchVM?.subscribeReactiveSearch(searchBar: searchBar, tableView: tableView)
+        searchVM?.subscribeReactiveSearch(searchBar: searchBar, tableView: tableView, scopeId: selectedScope)
     }
 
 }
@@ -41,12 +39,12 @@ class LastFMViewController: UIViewController, UISearchBarDelegate {
 extension LastFMViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return searchVM?.playItems.count ?? 0
+        return searchVM?.playItem.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "playItemCell", for: indexPath)
-        cell.textLabel?.text = searchVM?.playItems[indexPath.row]
+        cell.textLabel?.text = searchVM?.playItem[indexPath.row].name
         return cell
     }
 }
