@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B718F5F2413ACD00056B769 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F5E2413ACD00056B769 /* AppDelegate.swift */; };
+		7B718F612413ACD00056B769 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F602413ACD00056B769 /* SceneDelegate.swift */; };
+		7B718F632413ACD00056B769 /* LastFMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F622413ACD00056B769 /* LastFMViewController.swift */; };
+		7B718F662413ACD00056B769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B718F642413ACD00056B769 /* Main.storyboard */; };
+		7B718F682413ACD10056B769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B718F672413ACD10056B769 /* Assets.xcassets */; };
+		7B718F6B2413ACD10056B769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B718F692413ACD10056B769 /* LaunchScreen.storyboard */; };
+		7B718F732413AF610056B769 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B718F722413AF610056B769 /* SearchTableViewCell.xib */; };
+		7B718F782413C2FE0056B769 /* UrlConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F772413C2FE0056B769 /* UrlConnection.swift */; };
+		7B718F7B2413C90B0056B769 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F7A2413C90B0056B769 /* SearchViewModel.swift */; };
+		CD8769D66E0E6E482E75AB10 /* Pods_Lastfm_Hari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963CA6238F0F83CFC53C0F80 /* Pods_Lastfm_Hari.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1566655792655C4DE6DD6865 /* Pods-Lastfm-Hari.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lastfm-Hari.debug.xcconfig"; path = "Target Support Files/Pods-Lastfm-Hari/Pods-Lastfm-Hari.debug.xcconfig"; sourceTree = "<group>"; };
+		7B718F5B2413ACCF0056B769 /* Lastfm-Hari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lastfm-Hari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B718F5E2413ACD00056B769 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B718F602413ACD00056B769 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7B718F622413ACD00056B769 /* LastFMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFMViewController.swift; sourceTree = "<group>"; };
+		7B718F652413ACD00056B769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B718F672413ACD10056B769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B718F6A2413ACD10056B769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B718F6C2413ACD10056B769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B718F722413AF610056B769 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		7B718F772413C2FE0056B769 /* UrlConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlConnection.swift; sourceTree = "<group>"; };
+		7B718F7A2413C90B0056B769 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		7F1817967E5586389668C3FA /* Pods-Lastfm-Hari.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lastfm-Hari.release.xcconfig"; path = "Target Support Files/Pods-Lastfm-Hari/Pods-Lastfm-Hari.release.xcconfig"; sourceTree = "<group>"; };
+		963CA6238F0F83CFC53C0F80 /* Pods_Lastfm_Hari.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lastfm_Hari.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B718F582413ACCF0056B769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8769D66E0E6E482E75AB10 /* Pods_Lastfm_Hari.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7053AD47FD53CD1290ECF453 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1566655792655C4DE6DD6865 /* Pods-Lastfm-Hari.debug.xcconfig */,
+				7F1817967E5586389668C3FA /* Pods-Lastfm-Hari.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7B718F522413ACCF0056B769 = {
+			isa = PBXGroup;
+			children = (
+				7B718F5D2413ACD00056B769 /* Lastfm-Hari */,
+				7B718F5C2413ACCF0056B769 /* Products */,
+				7053AD47FD53CD1290ECF453 /* Pods */,
+				BF8680A0B913365BB02AE0E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7B718F5C2413ACCF0056B769 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B718F5B2413ACCF0056B769 /* Lastfm-Hari.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B718F5D2413ACD00056B769 /* Lastfm-Hari */ = {
+			isa = PBXGroup;
+			children = (
+				7B718F5E2413ACD00056B769 /* AppDelegate.swift */,
+				7B718F602413ACD00056B769 /* SceneDelegate.swift */,
+				7B718F622413ACD00056B769 /* LastFMViewController.swift */,
+				7B718F792413C8ED0056B769 /* ViewModel */,
+				7B718F752413C28E0056B769 /* Network */,
+				7B718F742413B8A80056B769 /* Model */,
+				7B718F642413ACD00056B769 /* Main.storyboard */,
+				7B718F722413AF610056B769 /* SearchTableViewCell.xib */,
+				7B718F672413ACD10056B769 /* Assets.xcassets */,
+				7B718F692413ACD10056B769 /* LaunchScreen.storyboard */,
+				7B718F6C2413ACD10056B769 /* Info.plist */,
+			);
+			path = "Lastfm-Hari";
+			sourceTree = "<group>";
+		};
+		7B718F742413B8A80056B769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B718F752413C28E0056B769 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7B718F772413C2FE0056B769 /* UrlConnection.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7B718F792413C8ED0056B769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7B718F7A2413C90B0056B769 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF8680A0B913365BB02AE0E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				963CA6238F0F83CFC53C0F80 /* Pods_Lastfm_Hari.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B718F5A2413ACCF0056B769 /* Lastfm-Hari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B718F6F2413ACD10056B769 /* Build configuration list for PBXNativeTarget "Lastfm-Hari" */;
+			buildPhases = (
+				A48F516902DCDCEC20184D94 /* [CP] Check Pods Manifest.lock */,
+				7B718F572413ACCF0056B769 /* Sources */,
+				7B718F582413ACCF0056B769 /* Frameworks */,
+				7B718F592413ACCF0056B769 /* Resources */,
+				07E94DC90A50EC98E368232A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lastfm-Hari";
+			productName = "Lastfm-Hari";
+			productReference = 7B718F5B2413ACCF0056B769 /* Lastfm-Hari.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B718F532413ACCF0056B769 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Hari Prasath";
+				TargetAttributes = {
+					7B718F5A2413ACCF0056B769 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7B718F562413ACCF0056B769 /* Build configuration list for PBXProject "Lastfm-Hari" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B718F522413ACCF0056B769;
+			productRefGroup = 7B718F5C2413ACCF0056B769 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B718F5A2413ACCF0056B769 /* Lastfm-Hari */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B718F592413ACCF0056B769 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B718F6B2413ACD10056B769 /* LaunchScreen.storyboard in Resources */,
+				7B718F732413AF610056B769 /* SearchTableViewCell.xib in Resources */,
+				7B718F682413ACD10056B769 /* Assets.xcassets in Resources */,
+				7B718F662413ACD00056B769 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07E94DC90A50EC98E368232A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lastfm-Hari/Pods-Lastfm-Hari-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lastfm-Hari/Pods-Lastfm-Hari-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lastfm-Hari/Pods-Lastfm-Hari-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A48F516902DCDCEC20184D94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lastfm-Hari-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B718F572413ACCF0056B769 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B718F632413ACD00056B769 /* LastFMViewController.swift in Sources */,
+				7B718F7B2413C90B0056B769 /* SearchViewModel.swift in Sources */,
+				7B718F5F2413ACD00056B769 /* AppDelegate.swift in Sources */,
+				7B718F782413C2FE0056B769 /* UrlConnection.swift in Sources */,
+				7B718F612413ACD00056B769 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B718F642413ACD00056B769 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B718F652413ACD00056B769 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B718F692413ACD10056B769 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B718F6A2413ACD10056B769 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B718F6D2413ACD10056B769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B718F6E2413ACD10056B769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B718F702413ACD10056B769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1566655792655C4DE6DD6865 /* Pods-Lastfm-Hari.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QTZBYY79ZW;
+				INFOPLIST_FILE = "Lastfm-Hari/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bt.internal.Lastfm-Hari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B718F712413ACD10056B769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F1817967E5586389668C3FA /* Pods-Lastfm-Hari.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QTZBYY79ZW;
+				INFOPLIST_FILE = "Lastfm-Hari/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bt.internal.Lastfm-Hari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B718F562413ACCF0056B769 /* Build configuration list for PBXProject "Lastfm-Hari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B718F6D2413ACD10056B769 /* Debug */,
+				7B718F6E2413ACD10056B769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B718F6F2413ACD10056B769 /* Build configuration list for PBXNativeTarget "Lastfm-Hari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B718F702413ACD10056B769 /* Debug */,
+				7B718F712413ACD10056B769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B718F532413ACCF0056B769 /* Project object */;
+}
