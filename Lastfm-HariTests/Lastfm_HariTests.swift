@@ -21,6 +21,34 @@ class Lastfm_HariTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testCheckScopeIdUpdated()
+    {
+        let searchVM = SearchViewModel()
+        searchVM.updateScopeId(scope: "Artist")
+        XCTAssert(searchVM.selectedScope == 0)
+        
+        searchVM.updateScopeId(scope: "Album")
+        XCTAssert(searchVM.selectedScope == 1)
+        
+        searchVM.updateScopeId(scope: "Track")
+        XCTAssert(searchVM.selectedScope == 2)
+        
+        searchVM.updateScopeId(scope: "dummy")
+        XCTAssert(searchVM.selectedScope == 0)
+    }
+    
+    func testServerConnection()
+    {
+        let searchVM = SearchViewModel()
+        searchVM.updateScopeId(scope: "Artist")
+        let url = searchVM.parseUrl(searchKey: "B")
+        XCTAssert(url.contains("artist"))
+        UrlConnection.fetchData(url: URL(string: url)!, completionHandler: { data in
+            XCTAssert(data != nil)
+        })
+    }
+    
 
     func testCheckArtist() {
         // This is an example of a functional test case.
