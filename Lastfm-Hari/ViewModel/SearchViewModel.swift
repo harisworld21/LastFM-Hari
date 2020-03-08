@@ -15,31 +15,27 @@ let albumURL = "http://ws.audioscrobbler.com/2.0/?method=album.search&album=<SEA
 let artistURL = "http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=<SEARCHKEY>&api_key=<API_KEY>&format=json"
 let trackURL = "http://ws.audioscrobbler.com/2.0/?method=track.search&track=<SEARCHKEY>&api_key=<API_KEY>&format=json"
 
-
 class SearchViewModel : NSObject {
-    let scopeBarItems = ["Artist", "Album", "Track"]
-    var playItem = [playItems]()
-    var allAlbums = ["New York", "London", "Oslo", "Warsaw", "Berlin", "Praga"] // Our mocked API data source
-    var allArtist = ["Artist6", "Artist5", "Artist4", "Artist1", "Artist2", "Artist3"] // Our mocked API data source
-    var allSongs = ["Hello", "Hi", "How", "Are", "You", "Praga"] // Our mocked API data source
+
     let disposeBag = DisposeBag() // Bag of disposables to release them when view is being deallocated
     var selectedScope = 0
     
-    func subscribeReactiveSearch(searchBar: UISearchBar, tableView:UITableView, scopeId: Int)
+    func updateScopeId(scope:String)
     {
-        selectedScope = scopeId
-        searchBar.scopeButtonTitles = scopeBarItems
-        searchBar.showsScopeBar = true
-        computeCurrentScope(parseUrl: parseUrl(searchKey: searchBar.text ?? ""), completionHandler: { response in
-            searchBar.rx.text.subscribe(onNext: {query in
-                self.playItem = response.filter { ($0.name.hasPrefix(query ?? "") ) }
-            tableView.reloadData()
-            }).disposed(by: self.disposeBag)
-        })
+        switch scope {
+        case "Artist":
+            selectedScope = 0
+        case "Album":
+            selectedScope = 1
+        case "Track":
+            selectedScope = 2
+        default:
+            selectedScope = 0
+        }
     }
-    
 }
 
+//URL Related
 extension SearchViewModel {
     
     func computeCurrentScope(parseUrl: String, completionHandler: @escaping (_ reponseItems:[playItems])->())

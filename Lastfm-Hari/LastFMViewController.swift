@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import RxSwift
 
 class LastFMViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar : UISearchBar!
     @IBOutlet weak var tableView : UITableView!
+    let disposeBag = DisposeBag()
     var searchVM : SearchViewModel?
+    let scopeBarItems = ["Artist", "Album", "Track"]
+    var playItem = [playItems]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +27,34 @@ class LastFMViewController: UIViewController, UISearchBarDelegate {
     func setUpView()
     {
         searchVM = SearchViewModel()
+        searchBar.scopeButtonTitles = scopeBarItems
+        searchBar.showsScopeBar = true
         searchBar.delegate = self
         searchBar.selectedScopeButtonIndex = 0
-        searchVM?.subscribeReactiveSearch(searchBar: searchBar, tableView: tableView, scopeId: 0)
     }
     
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-        searchVM?.subscribeReactiveSearch(searchBar: searchBar, tableView: tableView, scopeId: selectedScope)
+        searchVM?.updateScopeId(scope: scopeBarItems[selectedScope])
+        subscribeReactiveSearch()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text?.count == 1 || playItem.count == 0
+        {
+            subscribeReactiveSearch()
+        }
+    }
+    
+    
+    func subscribeReactiveSearch()
+    {
+        let parsedUrl = searchVM?.parseUrl(searchKey: searchBar.text ?? "") ?? ""
+        searchVM?.computeCurrentScope(parseUrl: parsedUrl, completionHandler: { response in
+            self.searchBar.rx.text.subscribe(onNext:{ query in
+            self.playItem = response.filter{($0.name.hasPrefix(query ?? ""))}
+                self.tableView.reloadData()
+            }).disposed(by: self.disposeBag)
+        })
     }
 
 }
@@ -39,12 +64,12 @@ class LastFMViewController: UIViewController, UISearchBarDelegate {
 extension LastFMViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return searchVM?.playItem.count ?? 0
+        return playItem.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "playItemCell", for: indexPath)
-        cell.textLabel?.text = searchVM?.playItem[indexPath.row].name
+        cell.textLabel?.text = playItem[indexPath.row].name
         return cell
     }
 }

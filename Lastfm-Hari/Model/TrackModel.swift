@@ -1,23 +1,21 @@
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
 //
-//  TrackModel.swift
-//  Lastfm-Hari
-//
-//  Created by Hari Prasath on 07/03/2020.
-//  Copyright © 2020 Hari Prasath. All rights reserved.
-//
+//   let trackModel = try? newJSONDecoder().decode(TrackModel.self, from: jsonData)
+
 import Foundation
 
-// MARK: - Welcome
+// MARK: - TrackModel
 struct TrackModel: Codable {
-    let results: TrackModelResults
+    let results: Results
 }
 
 // MARK: - Results
-struct TrackModelResults: Codable {
-    let opensearchQuery: OpensearchQuery
+struct Results: Codable {
+    let opensearchQuery: TrackOpensearchQuery
     let opensearchTotalResults, opensearchStartIndex, opensearchItemsPerPage: String
     let trackmatches: Trackmatches
-    let attr: Attr
+    let attr: TrackAttr
 
     enum CodingKeys: String, CodingKey {
         case opensearchQuery = "opensearch:Query"
@@ -26,6 +24,20 @@ struct TrackModelResults: Codable {
         case opensearchItemsPerPage = "opensearch:itemsPerPage"
         case trackmatches
         case attr = "@attr"
+    }
+}
+
+// MARK: - Attr
+struct TrackAttr: Codable {
+}
+
+// MARK: - OpensearchQuery
+struct TrackOpensearchQuery: Codable {
+    let text, role, startPage: String
+
+    enum CodingKeys: String, CodingKey {
+        case text = "#text"
+        case role, startPage
     }
 }
 
@@ -43,8 +55,6 @@ struct Track: Codable {
     let image: [Image]
     let mbid: String
 }
-
-
 
 enum Streamable: String, Codable {
     case fixme = "FIXME"
