@@ -21,8 +21,19 @@
 		7B718F8524145D620056B769 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F8424145D620056B769 /* TrackModel.swift */; };
 		7B718F882414E8940056B769 /* PlayItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F872414E8940056B769 /* PlayItemCell.swift */; };
 		7B718F8A2414FD1D0056B769 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F892414FD1D0056B769 /* DetailViewController.swift */; };
+		7B718F9224150B4B0056B769 /* Lastfm_HariTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F9124150B4B0056B769 /* Lastfm_HariTests.swift */; };
 		CD8769D66E0E6E482E75AB10 /* Pods_Lastfm_Hari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963CA6238F0F83CFC53C0F80 /* Pods_Lastfm_Hari.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B718F9424150B4B0056B769 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B718F532413ACCF0056B769 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B718F5A2413ACCF0056B769;
+			remoteInfo = "Lastfm-Hari";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1566655792655C4DE6DD6865 /* Pods-Lastfm-Hari.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lastfm-Hari.debug.xcconfig"; path = "Target Support Files/Pods-Lastfm-Hari/Pods-Lastfm-Hari.debug.xcconfig"; sourceTree = "<group>"; };
@@ -42,6 +53,9 @@
 		7B718F8424145D620056B769 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
 		7B718F872414E8940056B769 /* PlayItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayItemCell.swift; sourceTree = "<group>"; };
 		7B718F892414FD1D0056B769 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7B718F8F24150B4B0056B769 /* Lastfm-HariTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lastfm-HariTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B718F9124150B4B0056B769 /* Lastfm_HariTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lastfm_HariTests.swift; sourceTree = "<group>"; };
+		7B718F9324150B4B0056B769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F1817967E5586389668C3FA /* Pods-Lastfm-Hari.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lastfm-Hari.release.xcconfig"; path = "Target Support Files/Pods-Lastfm-Hari/Pods-Lastfm-Hari.release.xcconfig"; sourceTree = "<group>"; };
 		963CA6238F0F83CFC53C0F80 /* Pods_Lastfm_Hari.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lastfm_Hari.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -52,6 +66,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD8769D66E0E6E482E75AB10 /* Pods_Lastfm_Hari.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B718F8C24150B4B0056B769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				7B718F5D2413ACD00056B769 /* Lastfm-Hari */,
+				7B718F9024150B4B0056B769 /* Lastfm-HariTests */,
 				7B718F5C2413ACCF0056B769 /* Products */,
 				7053AD47FD53CD1290ECF453 /* Pods */,
 				BF8680A0B913365BB02AE0E8 /* Frameworks */,
@@ -81,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				7B718F5B2413ACCF0056B769 /* Lastfm-Hari.app */,
+				7B718F8F24150B4B0056B769 /* Lastfm-HariTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +162,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7B718F9024150B4B0056B769 /* Lastfm-HariTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B718F9124150B4B0056B769 /* Lastfm_HariTests.swift */,
+				7B718F9324150B4B0056B769 /* Info.plist */,
+			);
+			path = "Lastfm-HariTests";
+			sourceTree = "<group>";
+		};
 		BF8680A0B913365BB02AE0E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +201,24 @@
 			productReference = 7B718F5B2413ACCF0056B769 /* Lastfm-Hari.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7B718F8E24150B4B0056B769 /* Lastfm-HariTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B718F9624150B4B0056B769 /* Build configuration list for PBXNativeTarget "Lastfm-HariTests" */;
+			buildPhases = (
+				7B718F8B24150B4B0056B769 /* Sources */,
+				7B718F8C24150B4B0056B769 /* Frameworks */,
+				7B718F8D24150B4B0056B769 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B718F9524150B4B0056B769 /* PBXTargetDependency */,
+			);
+			name = "Lastfm-HariTests";
+			productName = "Lastfm-HariTests";
+			productReference = 7B718F8F24150B4B0056B769 /* Lastfm-HariTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +231,10 @@
 				TargetAttributes = {
 					7B718F5A2413ACCF0056B769 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					7B718F8E24150B4B0056B769 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 7B718F5A2413ACCF0056B769;
 					};
 				};
 			};
@@ -198,6 +252,7 @@
 			projectRoot = "";
 			targets = (
 				7B718F5A2413ACCF0056B769 /* Lastfm-Hari */,
+				7B718F8E24150B4B0056B769 /* Lastfm-HariTests */,
 			);
 		};
 /* End PBXProject section */
@@ -210,6 +265,13 @@
 				7B718F6B2413ACD10056B769 /* LaunchScreen.storyboard in Resources */,
 				7B718F682413ACD10056B769 /* Assets.xcassets in Resources */,
 				7B718F662413ACD00056B769 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B718F8D24150B4B0056B769 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +338,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B718F8B24150B4B0056B769 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B718F9224150B4B0056B769 /* Lastfm_HariTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B718F9524150B4B0056B769 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B718F5A2413ACCF0056B769 /* Lastfm-Hari */;
+			targetProxy = 7B718F9424150B4B0056B769 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7B718F642413ACD00056B769 /* Main.storyboard */ = {
@@ -450,6 +528,46 @@
 			};
 			name = Release;
 		};
+		7B718F9724150B4B0056B769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QTZBYY79ZW;
+				INFOPLIST_FILE = "Lastfm-HariTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bt.internal.Lastfm-HariTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lastfm-Hari.app/Lastfm-Hari";
+			};
+			name = Debug;
+		};
+		7B718F9824150B4B0056B769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QTZBYY79ZW;
+				INFOPLIST_FILE = "Lastfm-HariTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bt.internal.Lastfm-HariTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lastfm-Hari.app/Lastfm-Hari";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -467,6 +585,15 @@
 			buildConfigurations = (
 				7B718F702413ACD10056B769 /* Debug */,
 				7B718F712413ACD10056B769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B718F9624150B4B0056B769 /* Build configuration list for PBXNativeTarget "Lastfm-HariTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B718F9724150B4B0056B769 /* Debug */,
+				7B718F9824150B4B0056B769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
