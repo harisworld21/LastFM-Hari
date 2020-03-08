@@ -41,10 +41,10 @@ class LastFMViewController: UIViewController, UISearchBarDelegate {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchBar.text?.count == 1 || playItem.count == 0
-        {
+//        if searchBar.text?.count == 1 || playItem.count == 0
+//        {
             subscribeReactiveSearch()
-        }
+//        }
     }
     
     
