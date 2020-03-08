@@ -84,6 +84,12 @@ extension LastFMViewController: UITableViewDataSource {
 /// Here we have standard data source extension for ViewController
 extension LastFMViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let selectedItem = playItem[indexPath.row]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let controller = storyboard.instantiateViewController(withIdentifier: "detailVC") as? DetailViewController
+        {
+            controller.currentItem = selectedItem
+            self.present(controller, animated: true, completion: nil)
+        }
     }
 }

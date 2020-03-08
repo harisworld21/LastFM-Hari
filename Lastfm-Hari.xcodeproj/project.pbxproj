@@ -20,6 +20,7 @@
 		7B718F8324141CEE0056B769 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F8224141CEE0056B769 /* AlbumModel.swift */; };
 		7B718F8524145D620056B769 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F8424145D620056B769 /* TrackModel.swift */; };
 		7B718F882414E8940056B769 /* PlayItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F872414E8940056B769 /* PlayItemCell.swift */; };
+		7B718F8A2414FD1D0056B769 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F892414FD1D0056B769 /* DetailViewController.swift */; };
 		CD8769D66E0E6E482E75AB10 /* Pods_Lastfm_Hari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963CA6238F0F83CFC53C0F80 /* Pods_Lastfm_Hari.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		7B718F8224141CEE0056B769 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 		7B718F8424145D620056B769 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
 		7B718F872414E8940056B769 /* PlayItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayItemCell.swift; sourceTree = "<group>"; };
+		7B718F892414FD1D0056B769 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7F1817967E5586389668C3FA /* Pods-Lastfm-Hari.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lastfm-Hari.release.xcconfig"; path = "Target Support Files/Pods-Lastfm-Hari/Pods-Lastfm-Hari.release.xcconfig"; sourceTree = "<group>"; };
 		963CA6238F0F83CFC53C0F80 /* Pods_Lastfm_Hari.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lastfm_Hari.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 				7B718F5E2413ACD00056B769 /* AppDelegate.swift */,
 				7B718F602413ACD00056B769 /* SceneDelegate.swift */,
 				7B718F622413ACD00056B769 /* LastFMViewController.swift */,
+				7B718F892414FD1D0056B769 /* DetailViewController.swift */,
 				7B718F862414E8710056B769 /* View */,
 				7B718F792413C8ED0056B769 /* ViewModel */,
 				7B718F752413C28E0056B769 /* Network */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B718F8A2414FD1D0056B769 /* DetailViewController.swift in Sources */,
 				7B718F632413ACD00056B769 /* LastFMViewController.swift in Sources */,
 				7B718F7B2413C90B0056B769 /* SearchViewModel.swift in Sources */,
 				7B718F882414E8940056B769 /* PlayItemCell.swift in Sources */,
