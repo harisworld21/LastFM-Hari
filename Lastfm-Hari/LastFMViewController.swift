@@ -30,7 +30,9 @@ class LastFMViewController: UIViewController, UISearchBarDelegate {
         searchBar.scopeButtonTitles = scopeBarItems
         searchBar.showsScopeBar = true
         searchBar.delegate = self
-        searchBar.selectedScopeButtonIndex = 0
+        searchBar.selectedScopeButtonIndex = 1
+        searchVM?.updateScopeId(scope: scopeBarItems[1])
+        //As Album has proper icons
     }
     
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
@@ -91,5 +93,9 @@ extension LastFMViewController: UITableViewDelegate{
             controller.currentItem = selectedItem
             self.present(controller, animated: true, completion: nil)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
     }
 }

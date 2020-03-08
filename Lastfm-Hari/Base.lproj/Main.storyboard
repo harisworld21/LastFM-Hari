@@ -21,9 +21,10 @@
                                     <constraint firstAttribute="height" constant="30" id="Hi3-bX-UxA"/>
                                 </constraints>
                             </imageView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Album, Artist or songs" translatesAutoresizingMaskIntoConstraints="NO" id="s6B-PQ-XSn">
+                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="Search Album, Artist or Track" translatesAutoresizingMaskIntoConstraints="NO" id="s6B-PQ-XSn">
                                 <rect key="frame" x="0.0" y="74" width="414" height="56"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0n6-x0-sHS">
@@ -49,12 +50,13 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1D-Lp-T2g">
                                                             <rect key="frame" x="132" y="0.0" width="282" height="122"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="B05-lk-Ge2" secondAttribute="trailing" id="Al0-kc-acV"/>
                                                 <constraint firstItem="B05-lk-Ge2" firstAttribute="top" secondItem="8Dy-py-2hW" secondAttribute="top" id="EE7-gE-qWN"/>
@@ -161,7 +163,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.12941294910000001" green="0.12940964099999999" blue="0.1294118762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="lvB-vd-Pd7" firstAttribute="leading" secondItem="czk-LQ-Lbz" secondAttribute="leading" id="7M9-OH-vBd"/>
                                     <constraint firstItem="xdA-GV-N9R" firstAttribute="top" secondItem="lvB-vd-Pd7" secondAttribute="bottom" constant="20" id="HjR-Nd-SM5"/>
