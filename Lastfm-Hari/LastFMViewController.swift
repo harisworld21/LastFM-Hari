@@ -68,9 +68,15 @@ extension LastFMViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "playItemCell", for: indexPath)
-        cell.textLabel?.text = playItem[indexPath.row].name
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "playItemCell", for: indexPath) as? PlayItemCell
+        cell?.title.text = playItem[indexPath.row].name
+        guard let imageUrl = URL(string: playItem[indexPath.row].imageMedium()) else { return cell!}
+        
+        UrlConnection.fetchData(url: imageUrl, completionHandler: { data in
+            cell?.img.image = UIImage(data: data)
+        })
+            
+        return cell!
     }
 }
 

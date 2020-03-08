@@ -75,6 +75,30 @@ struct playItems {
         artist = trackInfo.artist
         mbid = trackInfo.mbid
     }
+    
+    func imageMedium() -> String
+    {
+        for img in image
+        {
+            if img.size == .medium
+            {
+                return img.text
+            }
+        }
+        return ""
+    }
+    
+    func imageLarge() -> String
+    {
+        for img in image
+        {
+            if img.size == .large
+            {
+                return img.text
+            }
+        }
+        return ""
+    }
 }
 
 

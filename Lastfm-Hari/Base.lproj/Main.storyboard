@@ -30,13 +30,42 @@
                                 <rect key="frame" x="0.0" y="130" width="414" height="766"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playItemCell" id="FhT-bJ-a4v">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playItemCell" rowHeight="122" id="aZJ-s3-71a" customClass="PlayItemCell" customModule="Lastfm_Hari" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FhT-bJ-a4v" id="S3u-bu-28D">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aZJ-s3-71a" id="8Dy-py-2hW">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="122"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B05-lk-Ge2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="122"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NzV-Bu-r0c">
+                                                            <rect key="frame" x="0.0" y="0.0" width="122" height="122"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="NzV-Bu-r0c" secondAttribute="height" multiplier="1:1" id="xkC-gF-biA"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1D-Lp-T2g">
+                                                            <rect key="frame" x="132" y="0.0" width="282" height="122"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="B05-lk-Ge2" secondAttribute="trailing" id="Al0-kc-acV"/>
+                                                <constraint firstItem="B05-lk-Ge2" firstAttribute="top" secondItem="8Dy-py-2hW" secondAttribute="top" id="EE7-gE-qWN"/>
+                                                <constraint firstItem="B05-lk-Ge2" firstAttribute="leading" secondItem="8Dy-py-2hW" secondAttribute="leading" id="HDi-mn-ilu"/>
+                                                <constraint firstAttribute="bottom" secondItem="B05-lk-Ge2" secondAttribute="bottom" id="OSY-v3-hnR"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="img" destination="NzV-Bu-r0c" id="VZd-W4-R2t"/>
+                                            <outlet property="title" destination="D1D-Lp-T2g" id="ZkE-LH-L0N"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

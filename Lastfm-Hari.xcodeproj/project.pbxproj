@@ -13,13 +13,13 @@
 		7B718F662413ACD00056B769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B718F642413ACD00056B769 /* Main.storyboard */; };
 		7B718F682413ACD10056B769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B718F672413ACD10056B769 /* Assets.xcassets */; };
 		7B718F6B2413ACD10056B769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B718F692413ACD10056B769 /* LaunchScreen.storyboard */; };
-		7B718F732413AF610056B769 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B718F722413AF610056B769 /* SearchTableViewCell.xib */; };
 		7B718F782413C2FE0056B769 /* UrlConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F772413C2FE0056B769 /* UrlConnection.swift */; };
 		7B718F7B2413C90B0056B769 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F7A2413C90B0056B769 /* SearchViewModel.swift */; };
 		7B718F7D2413EFE30056B769 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F7C2413EFE30056B769 /* CommonModel.swift */; };
 		7B718F8124141CE00056B769 /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F8024141CE00056B769 /* ArtistModel.swift */; };
 		7B718F8324141CEE0056B769 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F8224141CEE0056B769 /* AlbumModel.swift */; };
 		7B718F8524145D620056B769 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F8424145D620056B769 /* TrackModel.swift */; };
+		7B718F882414E8940056B769 /* PlayItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B718F872414E8940056B769 /* PlayItemCell.swift */; };
 		CD8769D66E0E6E482E75AB10 /* Pods_Lastfm_Hari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963CA6238F0F83CFC53C0F80 /* Pods_Lastfm_Hari.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,13 +33,13 @@
 		7B718F672413ACD10056B769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B718F6A2413ACD10056B769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B718F6C2413ACD10056B769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B718F722413AF610056B769 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		7B718F772413C2FE0056B769 /* UrlConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlConnection.swift; sourceTree = "<group>"; };
 		7B718F7A2413C90B0056B769 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		7B718F7C2413EFE30056B769 /* CommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
 		7B718F8024141CE00056B769 /* ArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
 		7B718F8224141CEE0056B769 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 		7B718F8424145D620056B769 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		7B718F872414E8940056B769 /* PlayItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayItemCell.swift; sourceTree = "<group>"; };
 		7F1817967E5586389668C3FA /* Pods-Lastfm-Hari.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lastfm-Hari.release.xcconfig"; path = "Target Support Files/Pods-Lastfm-Hari/Pods-Lastfm-Hari.release.xcconfig"; sourceTree = "<group>"; };
 		963CA6238F0F83CFC53C0F80 /* Pods_Lastfm_Hari.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lastfm_Hari.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,11 +89,11 @@
 				7B718F5E2413ACD00056B769 /* AppDelegate.swift */,
 				7B718F602413ACD00056B769 /* SceneDelegate.swift */,
 				7B718F622413ACD00056B769 /* LastFMViewController.swift */,
+				7B718F862414E8710056B769 /* View */,
 				7B718F792413C8ED0056B769 /* ViewModel */,
 				7B718F752413C28E0056B769 /* Network */,
 				7B718F742413B8A80056B769 /* Model */,
 				7B718F642413ACD00056B769 /* Main.storyboard */,
-				7B718F722413AF610056B769 /* SearchTableViewCell.xib */,
 				7B718F672413ACD10056B769 /* Assets.xcassets */,
 				7B718F692413ACD10056B769 /* LaunchScreen.storyboard */,
 				7B718F6C2413ACD10056B769 /* Info.plist */,
@@ -126,6 +126,14 @@
 				7B718F7A2413C90B0056B769 /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7B718F862414E8710056B769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B718F872414E8940056B769 /* PlayItemCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BF8680A0B913365BB02AE0E8 /* Frameworks */ = {
@@ -197,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B718F6B2413ACD10056B769 /* LaunchScreen.storyboard in Resources */,
-				7B718F732413AF610056B769 /* SearchTableViewCell.xib in Resources */,
 				7B718F682413ACD10056B769 /* Assets.xcassets in Resources */,
 				7B718F662413ACD00056B769 /* Main.storyboard in Resources */,
 			);
@@ -254,6 +261,7 @@
 			files = (
 				7B718F632413ACD00056B769 /* LastFMViewController.swift in Sources */,
 				7B718F7B2413C90B0056B769 /* SearchViewModel.swift in Sources */,
+				7B718F882414E8940056B769 /* PlayItemCell.swift in Sources */,
 				7B718F8124141CE00056B769 /* ArtistModel.swift in Sources */,
 				7B718F7D2413EFE30056B769 /* CommonModel.swift in Sources */,
 				7B718F8524145D620056B769 /* TrackModel.swift in Sources */,

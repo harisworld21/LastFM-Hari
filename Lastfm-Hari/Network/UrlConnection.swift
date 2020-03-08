@@ -11,7 +11,7 @@ import Alamofire
 
 class UrlConnection: NSObject {
     
-    func fetchData(url: URL, completionHandler : @escaping (_ responseData:Data)->())
+    static func fetchData(url: URL, completionHandler : @escaping (_ responseData:Data)->())
     {
         AF.request(url).responseData(completionHandler: {response in
             completionHandler(response.data ?? Data())

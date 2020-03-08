@@ -40,8 +40,11 @@ extension SearchViewModel {
     
     func computeCurrentScope(parseUrl: String, completionHandler: @escaping (_ reponseItems:[playItems])->())
     {
-        let urlConnection = UrlConnection()
-        urlConnection.fetchData(url: URL(string: parseUrl)!, completionHandler: {data in
+        guard let url = URL(string: parseUrl) else {
+            print("Error fetching URL")
+            return;
+        }
+        UrlConnection.fetchData(url: url, completionHandler: {data in
             completionHandler(self.parseResponse(data: data))
         })
     }
